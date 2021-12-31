@@ -1,11 +1,8 @@
 @Library('semver-compare-lib@1.0.0') _
 
 pipeline {
-    agent {
-        node {
-            label "master"
-        }
-    }
+    agent any      
+    
 
     stages {
         stage("Semver compare") {
