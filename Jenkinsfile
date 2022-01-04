@@ -33,7 +33,7 @@ pipeline {
                             echo "Take some action based on the fact that ${desired_version} == ${current_version}"
                         }
                         else {
-                            echo "Desired Version ${desired_version} is less than Current Version ${current_version}
+                            echo "Desired Version ${desired_version} is less than Current Version ${current_version}"
                             echo "Take some action based on the fact that ${desired_version} < ${current_version}"
                         }
                     }
