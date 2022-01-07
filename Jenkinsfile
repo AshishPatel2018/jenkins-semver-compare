@@ -8,7 +8,7 @@ pipeline {
         stage("Semver compare") {
             steps {
                 script {
-                    desired_versions = ["1.2.3", "2.0.0-rc.8", "2.0.0",      "1.0.0-rc.7", "1.0.0-rc.7", "foo"]
+                    desired_versions = ["1.2.3", "2.0.0-rc.8", "3.0.0",      "1.0.0-rc.7", "1.0.0-rc.7", "foo"]
                     current_versions = ["1.2.3", "2.0.0-rc.7", "1.0.0-rc.7", "1.0.0-rc.7", "2.0.0",      "bar"]
 
                     for (int i=0; i < desired_versions.size(); i++) {
